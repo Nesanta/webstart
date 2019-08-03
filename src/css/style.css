@@ -310,16 +310,24 @@ img {
     padding-left: 18px;
     font-size: 16px;
     font-weight: 400;
-    margin-bottom: 11px;
+    margin-bottom: 13px;
     max-width: 230px;
   }
   .hero-list {
-    margin-bottom: 35px;
+    margin-bottom: 40px;
   }
   .hero-list__item {
-    margin-bottom: 16px;
+    margin-bottom: 18px;
     padding-left: 14px;
     line-height: 1.4;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  .hero-list__item:first-child {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .hero-list__text {
     font-size: 12px;
@@ -496,7 +504,7 @@ img {
 
 @media (max-width: 567px) {
   .offer {
-    padding-top: 48px;
+    padding-top: 52px;
     background: #ffffff;
   }
   .offer-block {
