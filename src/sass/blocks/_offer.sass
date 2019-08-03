@@ -1,0 +1,138 @@
+.offer
+  background: url('../img/offer-bg.png') no-repeat
+  background-size: contein
+  background-position: center right
+  position: relative
+  padding-top: 52px
+  &:before 
+    content: ''
+    width: 50%
+    height: 100%
+    position: absolute
+    background-color: #ffffff
+    top: 0
+    left: 0
+  &-block 
+    width: 50% 
+    padding-right: 90px
+    position: relative
+  &__title
+    max-width: 360px 
+    line-height: 35px
+    margin-top: 25px
+    margin-bottom: 21px
+  &__subtitle
+    max-width: 250px
+    margin-bottom: 33px
+  &__input  
+    width: 240px
+    border: $border-input
+    outline: none
+    margin-bottom: 30px
+    &:focus
+      border: $border-input-focus
+    &:first-child
+      margin-right: 10px
+  &__button
+    width: 100%  
+    min-height: 70px
+    +bold
+    font-size: 16px
+    font-weight: 400
+    line-height: 18px
+    margin-bottom: 28px
+  &-bottom
+    display: flex   
+  &-text 
+    width: 50%
+    font-size: 15px
+    line-height: 24px
+    &__right
+      display: flex
+      flex-direction: column
+  &-right 
+    margin-right: 10px    
+    display: flex
+    flex-direction: column
+    align-items: flex-end
+    margin-left: -10px
+  &__phone
+    align-self: center
+    margin-right: 20px
+
+      //  адаптив
+
+@media (max-width: 1200px) 
+  .offer 
+    background-size: cover
+    &-bottom
+      flex-direction: column
+      align-items: flex-start    
+    &-text
+      width: 100%
+      margin-bottom: 10px
+      &__right
+        align-items: flex-start
+        margin: 0
+    &__phone
+      align-self: baseline  
+    &__input
+      width: 100%
+      margin-bottom: 10px 
+    &__button
+      font-size: 13px     
+
+@media (max-width: 768px) 
+  .offer 
+    padding-top: 53px
+    background: #ffffff
+    &-block 
+      width: 100%
+      padding-right: 0
+    &__title 
+      width: 100%
+      font-size: 18px
+      line-height: 23px 
+      margin-top: 0  
+      margin-bottom: 15px 
+
+@media (max-width: 567px) 
+  .offer 
+    padding-top: 48px
+    background: #ffffff
+    &-block 
+      width: 100%
+      padding-right: 0
+    &__title 
+      width: 275px
+      font-size: 18px
+      line-height: 23px 
+      margin-top: 0  
+      margin-bottom: 16px
+      padding-left: 12px 
+    &__subtitle
+      font-size: 14px
+      margin-left: 12px  
+      margin-bottom: 26px 
+    &__input
+      width: 275px
+      height: 65px
+      border-radius: 10px   
+      margin-left: 14px 
+      margin-bottom: 8px
+    &__button
+      width: 275px   
+      font-size: 14px
+      line-height: 18px
+      padding: 20px 60px
+      margin-left: 17px
+      margin-bottom: 20px
+    &-text
+      margin-left: 19px
+      &__left
+      margin-top: 4px
+      margin-bottom: 2px
+    &-right
+      margin-left: -1px
+    &__phone
+      margin-left: -2px
