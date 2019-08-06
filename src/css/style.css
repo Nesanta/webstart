@@ -571,8 +571,9 @@ img {
 .modal-dialog {
   position: relative;
   margin: auto;
-  max-width: 450px;
+  max-width: 570px;
   width: 90%;
+  height: 674px;
   min-width: 200px;
   background-color: #fff;
   padding: 40px;
@@ -583,11 +584,110 @@ img {
   top: 0;
   right: 0;
   background-color: #ffd200;
-  width: 15px;
-  height: 15x;
+  width: 20px;
+  height: 20px;
+  text-align: center;
 }
 
 .modal-dialog__close:hover {
   cursor: pointer;
+}
+
+.modal-dialog__title {
+  width: 300px;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 33px;
+  text-align: center;
+  margin: auto;
+  margin-top: 33px;
+  margin-bottom: 35px;
+  padding-left: 5px;
+}
+
+.modal-dialog__subtitle {
+  display: block;
+  font-size: 16px;
+  line-height: 35px;
+  text-align: center;
+  margin-bottom: 45px;
+  padding-left: 9px;
+}
+
+.modal-batton {
+  display: block;
+  margin: auto;
+  margin-top: 30px;
+  width: 370px;
+  height: 70px;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.modal-bottom {
+  display: block;
+  margin: auto;
+  text-align: center;
+  width: 275px;
+}
+
+.modal-bottom__text {
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.modal-bottom__phone {
+  display: block;
+  margin: 9px auto;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.modal-input {
+  display: block;
+  width: 370px;
+  height: 65px;
+  margin: 15px auto;
+  border: 1px solid #dddddd;
+}
+
+.modal-form {
+  margin-bottom: 27px;
+}
+
+@media (max-width: 567px) {
+  .modal-dialog__title {
+    width: 225px;
+    font-size: 16px;
+    margin-bottom: 25px;
+  }
+  .modal-dialog__subtitle {
+    font-size: 14px;
+    width: 170px;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+  .modal-input {
+    width: 225px;
+    height: 60px;
+  }
+  .modal-batton {
+    width: 225px;
+    height: 60px;
+  }
+  .modal-bottom {
+    width: 225px;
+  }
+  .modal-bottom__text {
+    font-size: 12px;
+  }
+  .modal-bottom__phone {
+    margin: 20px auto;
+  }
 }
 /*# sourceMappingURL=style.css.map */

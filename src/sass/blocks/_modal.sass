@@ -11,19 +11,105 @@
   &-dialog
     position: relative
     margin: auto
-    max-width: 450px
+    max-width: 570px
     width: 90%
+    height: 674px
     min-width: 200px
     background-color: #fff
     padding: 40px
+    // кнопка закрыть
     &__close 
       position: absolute
       top: 0
       right: 0
       background-color: $main-color
-      width: 15px
-      height: 15x
+      width: 20px
+      height: 20px
+      text-align: center
       &:hover
         cursor: pointer
+    // Заголовок
+    &__title
+      width: 300px
+      +bold
+      font-size: 22px        
+      line-height: 33px
+      text-align: center
+      margin: auto
+      margin-top: 33px
+      margin-bottom: 35px
+      padding-left: 5px
+    // Подзаголовок
+    &__subtitle
+      display: block
+      font-size: 16px
+      line-height: 35px
+      text-align: center 
+      margin-bottom: 45px 
+      padding-left: 9px
+  // Кнопка
+  &-batton 
+    display: block 
+    margin: auto 
+    margin-top: 30px
+    width: 370px
+    height: 70px
+    +bold 
+    font-size: 16px
+    line-height: 18px
+      
+  // Подвал
+  &-bottom 
+    display: block
+    margin: auto
+    text-align: center
+    width: 275px
+    &__text 
+      font-size: 15px
+      line-height: 20px
+    &__phone
+      display: block
+      margin: 9px auto
+      +bold 
+      font-size: 24px
+      line-height: 24px
+  &-input
+    display: block
+    width: 370px
+    height: 65px
+    margin: 15px auto 
+    border: $border-input
+    
+  &-form 
+    margin-bottom: 27px  
+
+@media (max-width: 567px)
+  .modal
+    &-dialog
+      &__title 
+        width: 225px
+        font-size: 16px
+        margin-bottom: 25px
+      &__subtitle
+        font-size: 14px  
+        width: 170px
+        margin: auto
+        margin-bottom: 20px
+    &-input 
+      width: 225px
+      height: 60px    
+
+    &-batton 
+      width: 225px
+      height: 60px 
+      
+
+    &-bottom 
+      width: 225px  
+      &__text 
+        font-size: 12px 
+      &__phone 
+        margin: 20px auto    
+
 
 
