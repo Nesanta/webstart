@@ -690,4 +690,24 @@ img {
     margin: 20px auto;
   }
 }
+
+.arrow {
+  display: none;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  background-color: #ffd200;
+}
+
+.arrow_show {
+  display: block;
+}
+
+.arrow-block {
+  position: relative;
+}
+
+.arrow-block:hover {
+  cursor: pointer;
+}
 /*# sourceMappingURL=style.css.map */
