@@ -533,6 +533,7 @@ img {
 @media (max-width: 567px) {
   .offer {
     padding-top: 52px;
+    padding-bottom: 52px;
     background: #ffffff;
   }
   .offer-bottom {
@@ -800,7 +801,6 @@ img {
   position: absolute;
   top: 0;
   right: 0;
-  background-color: #ffd200;
   width: 20px;
   height: 20px;
   text-align: center;
@@ -808,6 +808,7 @@ img {
 
 .success__close:hover {
   cursor: pointer;
+  background-color: #ffd200;
 }
 
 @media (max-width: 567px) {
@@ -848,9 +849,13 @@ img {
 }
 
 .portfolio__title {
-  max-width: 500px;
+  max-width: 600px;
   margin: auto;
-  margin-bottom: 100px;
+  margin-bottom: 94px;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 45px;
 }
 
 .portfolio__arrows {
@@ -867,5 +872,24 @@ img {
 
 .slider__image {
   margin: auto;
+}
+
+@media (max-width: 567px) {
+  .portfolio {
+    padding: 40px 25px;
+  }
+  .portfolio__title {
+    min-width: 260px;
+    font-size: 18px;
+    font-weight: 700;
+    margin: auto;
+    margin-bottom: 41px;
+    line-height: 20px;
+  }
+  .slider__image {
+    margin: auto;
+    margin-bottom: -20px;
+    width: 246px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

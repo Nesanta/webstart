@@ -2,15 +2,38 @@
   background: $second-color url('../img/portfolio/portfolio-pattern.jpg') repeat-y center left
   background-size: 50% 
   &__title
-    max-width: 500px
+    max-width: 600px
     margin: auto
-    margin-bottom: 100px
+    margin-bottom: 94px
+    +bold 
+    font-size: 30px
+    line-height: 45px
   &__arrows 
     max-width: 120px  
     margin: auto 
     margin-top: 68px
     display: flex
     justify-content: space-between
+
 .slider
   &__image
-    margin: auto
+    margin: auto    
+
+@media (max-width: 567px)
+  .portfolio
+    padding: 40px 25px
+    &__title 
+      min-width: 260px
+      font-size: 18px
+      font-weight: 700
+      margin: auto
+      margin-bottom: 41px
+      line-height: 20px
+  .slider
+    &__image
+      margin: auto 
+      margin-bottom: -20px
+      width: 246px
+
+
+
