@@ -6,7 +6,9 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>First website</title>
   <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/slick.css">
   <link rel="stylesheet" href="css/style.css">
+
 </head>
 <body>
   
@@ -107,19 +109,45 @@
         </div>
       </div>
       <!-- /container -->
+    </section>  
+
+    <section class="section portfolio">
+      <div class="container">
+        <h2 class="section-title portfolio__title">Работая с 2007 года, мы сделали более 500 ремонтов в квартирах и домах
+          </h2>
+          <div class="slider">
+            <div class="slider__item"><img class="slider__image" src="img/portfolio/slider-1.png" alt="slider 1"></div>
+            <div class="slider__item"><img class="slider__image" src="img/portfolio/slider-2.png" alt="slider 2"></div>
+            <div class="slider__item"><img class="slider__image" src="img/portfolio/slider-3.png" alt="slider 3"></div>
+            <div class="slider__item"><img class="slider__image" src="img/portfolio/slider-1.png" alt="slider 1"></div>
+            <div class="slider__item"><img class="slider__image" src="img/portfolio/slider-2.png" alt="slider 2"></div>
+            <div class="slider__item"><img class="slider__image" src="img/portfolio/slider-3.png" alt="slider 3"></div>
+          </div>
+          <div class="arrows portfolio__arrows">
+            <div class="arrows__left">
+              <img src="img/portfolio/left-arrow.png" alt="arrows left">
+            </div>
+            <div class="arrows__right">
+              <img src="img/portfolio/right-arrow.png" alt="arrows right">
+            </div>
+          </div>
+      </div>
+      <!-- /.container -->
     </section>
+    <!-- /.section portfolio -->
+
   </main> 
   
   <div class="modal" id="modal">
     <div class="modal-dialog">
         <div class="buttons modal-dialog__close" id="close">&times;</div>
-        <h3 class="modal-dialog__title">Узнайте точную стоимость ремонта по телефону!</h3>
-        <span class="modal-dialog__subtitle">Заполните поля ниже - мы свяжемся с Вами</span>
-        <form action="#" class="form modal-form">
-          <input type="text"  class="input modal-input" placeholder="Ваше имя">
-          <input type="tel"  class="input modal-input" placeholder="Ваш телефон">
-          <button class="button modal-batton">Узнать стоимость</button>
-        </form>
+          <h3 class="modal-dialog__title">Узнайте точную стоимость ремонта по телефону!</h3>
+          <span class="modal-dialog__subtitle">Заполните поля ниже - мы свяжемся с Вами</span>
+          <form action="#" class="form modal-form">
+            <input type="text"  class="input modal-input" placeholder="Ваше имя">
+            <input type="tel"  class="input modal-input" placeholder="Ваш телефон">
+            <button class="button modal-batton">Узнать стоимость</button>
+          </form>
         <div class="modal-bottom">
           <span class="modal-bottom__text">Или Вы можете перезвонить нам сами по телефону:</span>
           <a href="tel:+7(8182)42-251-31" class="phone modal-bottom__phone">+7 (8182) 42-51-31</a>
@@ -145,5 +173,9 @@
   <script src="js/arrow.js"></script>
   <script src="js/scripts.js"></script>
   <script src="js/success.js"></script>  
+  <script src="js/slick.min.js"></script>
+
+
+
 </body>
 </html>

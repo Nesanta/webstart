@@ -73,6 +73,7 @@ img {
 .section-title {
   font-family: 'Museo Sans Bold', sans-serif;
   font-weight: 400;
+  text-align: center;
 }
 
 .section-subtitle {
@@ -94,6 +95,10 @@ img {
   font-size: 15px;
   color: #333333;
   text-decoration: none;
+}
+
+.arrows__left:hover, .arrows__right:hover {
+  cursor: pointer;
 }
 
 .navbar {
@@ -371,6 +376,7 @@ img {
   line-height: 35px;
   margin-top: 25px;
   margin-bottom: 21px;
+  text-align: left;
 }
 
 .offer__subtitle {
@@ -834,5 +840,32 @@ img {
   .success__close:hover {
     cursor: pointer;
   }
+}
+
+.portfolio {
+  background: #f5f5f5 url("../img/portfolio/portfolio-pattern.jpg") repeat-y center left;
+  background-size: 50%;
+}
+
+.portfolio__title {
+  max-width: 500px;
+  margin: auto;
+  margin-bottom: 100px;
+}
+
+.portfolio__arrows {
+  max-width: 120px;
+  margin: auto;
+  margin-top: 68px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.slider__image {
+  margin: auto;
 }
 /*# sourceMappingURL=style.css.map */
