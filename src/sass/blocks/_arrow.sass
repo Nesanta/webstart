@@ -1,12 +1,21 @@
 .arrow 
   display: none
   position: fixed
-  right: 0
-  bottom: 0
-  background-color: $main-color
+  left: 0
+  bottom: 50%
+  width: 35px
+  background-color: ($main-color)
+  opacity: 0.4
   &_show
     display: block
   &-block 
     position: relative
     &:hover
       cursor: pointer
+  &:hover
+    background-color: ($main-color)
+    opacity: 1     
+
+@media (max-width: 567px)    
+  .arrow 
+    display: none
