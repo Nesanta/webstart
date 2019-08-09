@@ -1,8 +1,9 @@
 .portfolio
+  padding: 88px 0
   background: $second-color url('../img/portfolio/portfolio-pattern.jpg') repeat-y center left
   background-size: 50% 
   &__title
-    max-width: 600px
+    max-width: 800px
     margin: auto
     margin-bottom: 94px
     +bold 
@@ -15,24 +16,29 @@
     display: flex
     justify-content: space-between
 
-.slider
+.slider 
+  margin: 0 -15px   
+  &__item
+    &:focus
+      outline: none
   &__image
-    margin: auto    
+      margin: auto     
 
 @media (max-width: 567px)
   .portfolio
-    padding: 40px 25px
+    padding: 42px 18px
     &__title 
-      min-width: 260px
+      width: 276px
       font-size: 18px
       font-weight: 700
       margin: auto
-      margin-bottom: 41px
       line-height: 20px
+      margin-bottom: 41px
+    &__arrows
+      margin-top: 48px 
   .slider
     &__image
       margin: auto 
-      margin-bottom: -20px
       width: 246px
 
 
