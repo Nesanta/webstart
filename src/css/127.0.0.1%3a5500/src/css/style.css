@@ -1027,17 +1027,16 @@ img {
 
 @media (max-width: 567px) {
   .price {
-    padding: 52px 0;
+    padding: 56px 0;
   }
   .price__title {
     font-size: 18px;
-    line-height: 23px;
+    line-height: 27px;
     width: 284px;
-    margin-bottom: 5px;
+    margin-bottom: 27px;
   }
   .price__subtitle {
     font-size: 14px;
-    padding-right: 19px;
   }
   .price__card {
     margin-bottom: 25px;
@@ -1054,7 +1053,7 @@ img {
     padding: 33px 0;
   }
   .card.price__card {
-    margin-bottom: 30px;
+    margin-bottom: 25px;
   }
 }
 /*# sourceMappingURL=style.css.map */
