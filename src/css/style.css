@@ -595,7 +595,7 @@ img {
 
 @media (max-width: 567px) {
   .offer {
-    padding-top: 52px;
+    padding-top: 49px;
     padding-bottom: 52px;
     background: #ffffff;
   }
@@ -617,13 +617,16 @@ img {
     font-size: 18px;
     line-height: 23px;
     margin-top: 0;
-    margin-bottom: 16px;
+    margin-bottom: 14px;
     padding-left: 12px;
   }
   .offer__subtitle {
     font-size: 14px;
     margin-left: 12px;
     margin-bottom: 26px;
+  }
+  .offer-form .offer__form {
+    margin-top: 24px;
   }
   .offer__input {
     width: 275px;
@@ -637,7 +640,7 @@ img {
     font-size: 14px;
     line-height: 18px;
     padding: 20px 60px;
-    margin-left: 17px;
+    margin-left: 14px;
     margin-bottom: 20px;
   }
   .offer-text {
@@ -768,29 +771,73 @@ img {
   border: 1px solid #dddddd;
 }
 
+.modal-input::-webkit-input-placeholder {
+  font-family: 'Museo Sans Light', sans-serif;
+  font-weight: 400;
+}
+
+.modal-input:-ms-input-placeholder {
+  font-family: 'Museo Sans Light', sans-serif;
+  font-weight: 400;
+}
+
+.modal-input::-ms-input-placeholder {
+  font-family: 'Museo Sans Light', sans-serif;
+  font-weight: 400;
+}
+
+.modal-input::placeholder {
+  font-family: 'Museo Sans Light', sans-serif;
+  font-weight: 400;
+}
+
 .modal-form {
   margin-bottom: 27px;
 }
 
+.modal #username-error {
+  position: absolute;
+  top: 47%;
+  left: 41%;
+  color: red;
+}
+
+.modal #userphone-error {
+  position: absolute;
+  top: 60%;
+  left: 41%;
+  color: red;
+}
+
 @media (max-width: 567px) {
+  .modal-dialog {
+    height: 550px;
+    padding: 0;
+    padding-top: 10px;
+  }
   .modal-dialog__title {
     width: 225px;
     font-size: 16px;
-    margin-bottom: 25px;
+    margin-bottom: 15px;
+    line-height: 25px;
   }
   .modal-dialog__subtitle {
     font-size: 14px;
+    line-height: 20px;
     width: 170px;
     margin: auto;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
   }
   .modal-input {
     width: 225px;
-    height: 60px;
+    height: 55px;
+    margin: 18px auto;
   }
   .modal-batton {
     width: 225px;
-    height: 60px;
+    height: 55px;
+    font-size: 14px;
+    margin-top: 20px;
   }
   .modal-bottom {
     width: 225px;
@@ -800,6 +847,20 @@ img {
   }
   .modal-bottom__phone {
     margin: 20px auto;
+  }
+  .modal #username-error {
+    position: absolute;
+    top: 42%;
+    left: 31%;
+    color: red;
+    font-size: 12px;
+  }
+  .modal #userphone-error {
+    position: absolute;
+    top: 55%;
+    left: 31%;
+    color: red;
+    font-size: 12px;
   }
 }
 
@@ -961,7 +1022,7 @@ img {
     padding: 42px 18px;
   }
   .portfolio__title {
-    width: 276px;
+    width: 283px;
     font-size: 18px;
     font-weight: 700;
     margin: auto;
@@ -1356,6 +1417,7 @@ img {
   }
   .brif__form {
     padding-left: 5px;
+    margin-top: 88px;
   }
   .brif__input {
     max-width: 275px;
@@ -1385,9 +1447,6 @@ img {
     font-size: 14px;
     line-height: 20px;
     padding-left: 5px;
-  }
-  .form {
-    margin-top: 88px;
   }
   .form__title {
     margin-bottom: 17px;

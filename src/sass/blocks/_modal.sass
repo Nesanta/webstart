@@ -79,29 +79,49 @@
     height: 65px
     margin: 15px auto 
     border: $border-input
+    &::placeholder 
+      +reg 
     
   &-form 
     margin-bottom: 27px  
 
+  #username-error
+    position: absolute 
+    top: 47%
+    left: 41% 
+    color: red
+  #userphone-error
+    position: absolute 
+    top: 60%
+    left: 41%
+    color: red
+    
 @media (max-width: 567px)
   .modal
     &-dialog
+      height: 550px
+      padding: 0
+      padding-top: 10px
       &__title 
         width: 225px
         font-size: 16px
-        margin-bottom: 25px
+        margin-bottom: 15px
+        line-height: 25px
       &__subtitle
-        font-size: 14px  
+        font-size: 14px 
+        line-height: 20px 
         width: 170px
         margin: auto
-        margin-bottom: 20px
+        margin-bottom: 25px
     &-input 
       width: 225px
-      height: 60px    
-
+      height: 55px    
+      margin: 18px auto
     &-batton 
       width: 225px
-      height: 60px 
+      height: 55px 
+      font-size: 14px
+      margin-top: 20px
       
 
     &-bottom 
@@ -111,5 +131,17 @@
       &__phone 
         margin: 20px auto    
 
+    #username-error
+      position: absolute 
+      top: 42%
+      left: 31% 
+      color: red
+      font-size: 12px
+    #userphone-error
+      position: absolute 
+      top: 55%
+      left: 31%
+      color: red
+      font-size: 12px
 
 
