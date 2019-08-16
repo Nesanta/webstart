@@ -1,0 +1,73 @@
+.footer 
+  position: relative
+.map 
+  position: absolute
+  left: 0
+  top: 0
+  width: 50%
+.contacts 
+  flex-basis: 50%
+  padding-top: 68px
+  padding-left: 212px
+  &__title 
+    +bold 
+    font-size: 22px
+    line-height: 1.5
+    margin-bottom: 95px
+  &-block 
+    display: flex
+    justify-content: flex-end
+  &-list 
+    padding: 0
+    list-style: none 
+    &__icon 
+      width: 20px
+      height: 20px
+      text-align: center
+      line-height: 20px
+      margin-right: 23px
+    &__item 
+      display: flex  
+      align-items: flex-start
+      margin-bottom: 39px
+      &:ntf-of-type(1)
+        +bold 
+        font-size: 24px
+
+
+
+@media (max-width: 768px)
+  .footer
+    display: flex
+    flex-wrap: wrap 
+  .map 
+    position: unset
+    order: 1
+    width: 100%  
+  .contacts
+    flex-basis: 100%
+    margin: auto 
+    padding-top: 35px
+    padding-left: 0
+    &__title 
+      margin-bottom: 20px
+      text-align: center
+      font-size: 19px
+      max-width: 100% 
+    &-list 
+      display: flex
+      align-items: center
+      flex-direction: column 
+      &__text 
+        font-size: 15px
+      &__item 
+        // &:ntf-of-type(1)
+        //   margin-bottom: 16px
+        //   margin-left: 25px
+        // &:ntf-of-type(2)
+        //   margin-left: -36px
+        // &:ntf-of-type(3) 
+        //   margin-left: -5px    
+
+
+         
