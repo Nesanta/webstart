@@ -1,20 +1,4 @@
-// Обработка и отправка формы через технологию AJAX
-// $('#offer-form').on('submit', function(event) {
-//   event.preventDefault();
-//   $.ajax({
-//     url: 'mail.php',
-//     type: 'POST',
-//     data: $(this).serialize(),
-//     success: function(data) {
-//       $('.success').html(data + ', Ваша форма отправлена!')  
-//     }, 
-//     error: function(jqXHR, textStatus) {
-//       console.log(jqXHR + ':' + textStatus);
-      
-//     }
-//   });
-// });
-
+// Валидация форм
 
 $(document).ready(function() {
 
@@ -47,16 +31,26 @@ $(document).ready(function() {
       email: {
         required: "Заполните поле",
         email: "Введите корректный email"
-      },
-      
-    }
+      }, 
+    },
+    submitHandler: function (form) {
+        $.ajax({
+          url: 'mail.php',
+          type: 'POST',
+          data: $("#brif-form").serialize(),
+          success: function (data) {
+            $('.input').val('');
+            alert('ваша заявка отправлена'),
+            console.log(data);
+          }
+        });
+      }
   });
 
   //  Скрипт маски телефона
   $('.phone').mask('+7(999)999-99-99');  
 
   // Валидация offer-form 
-
   $('#offer-form').validate({
     rules: {
       username: {
@@ -76,13 +70,21 @@ $(document).ready(function() {
       },
       userphone: {
         required: "Заполните поле",
-      }      
-    }
-
-    
-
+      } 
+    },
+    submitHandler: function (form) {
+      $.ajax({
+        url: 'mail.php',
+        type: 'POST',
+        data: $("#offer-form").serialize(),
+        success: function (data) {
+          $('.input').val('');
+          alert('Спасибо за заявку, скоро мы Вам перезвоним'),
+          console.log(data);
+        }
+      });
+    }    
   });
-
   // Валидация modal-form
   $('#modal-form').validate({
     rules: {
@@ -104,12 +106,20 @@ $(document).ready(function() {
       userphone: {
         required: "Заполните поле",
       }      
+    },
+    submitHandler: function (form) {
+      $.ajax({
+        url: 'mail.php',
+        type: 'POST',
+        data: $("#modal-form").serialize(),
+        success: function (data) {
+          $('.input').val('');
+          alert('ваша заявка отправлена'),
+          console.log(data);
+        }
+      });
     }
-
-    
-
   });
-
   // Скрипт слайдера
   $('.slider').slick({
     slidesToShow: 3,
