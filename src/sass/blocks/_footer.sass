@@ -9,6 +9,7 @@
   flex-basis: 50%
   padding-top: 68px
   padding-left: 212px
+  line-height: 26px
   &__title 
     +bold 
     font-size: 22px
@@ -20,6 +21,16 @@
   &-list 
     padding: 0
     list-style: none 
+    &__text 
+      font-size: 16px 
+      &-bold 
+        +bold 
+    &__wrap 
+      display: flex
+      flex-direction: column
+    &__link 
+      text-decoration: none
+      color: #000000  
     &__icon 
       width: 20px
       height: 20px
@@ -29,14 +40,40 @@
     &__item 
       display: flex  
       align-items: flex-start
-      margin-bottom: 39px
+      margin-bottom: 27px
       &:ntf-of-type(1)
         +bold 
         font-size: 24px
 
 
+@media (max-width: 1200px) 
+  .contacts 
+    padding-left: 113px
+    &__title 
+      max-width: 100% 
+      font-size: 20px
 
-@media (max-width: 768px)
+@media (max-width: 768px)  
+  .footer
+    display: flex
+    flex-wrap: wrap 
+  .map 
+    position: unset
+    order: 1
+    width: 100%    
+  .contacts 
+    flex-basis: 100%
+    padding-left: 140px
+    &__title 
+      width: 300px
+      text-align: left
+      font-size: 18px
+      margin-bottom: 60px
+    &-list 
+      padding-bottom: 30px
+      padding-left: 30px
+
+@media (max-width: 567px)
   .footer
     display: flex
     flex-wrap: wrap 
@@ -47,17 +84,23 @@
   .contacts
     flex-basis: 100%
     margin: auto 
-    padding-top: 35px
-    padding-left: 0
+    padding-top: 41px
+    padding-left: 15px
     &__title 
-      margin-bottom: 20px
-      text-align: center
-      font-size: 19px
+      margin-bottom: 32px
       max-width: 100% 
+      font-size: 18px
+      line-height: 24px
+      text-align: left
+      padding-left: 14px
     &-list 
       display: flex
-      align-items: center
+      align-items: flex-start
       flex-direction: column 
+      padding-bottom: 18px
+      padding-left: 11px
+      &__icon 
+        margin-right: 12px
       &__text 
         font-size: 15px
       &__item 
