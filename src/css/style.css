@@ -347,6 +347,7 @@ template {
   src: url("../fonts/MuseoSansCyrl/MuseoSansCyrl-300.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-300.woff") format("woff"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-300.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
+  font-display: auto;
 }
 
 @font-face {
@@ -355,6 +356,7 @@ template {
   src: url("../fonts/MuseoSansCyrl/MuseoSansCyrl-700.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-700.woff") format("woff"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-700.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
+  font-display: auto;
 }
 
 * {
@@ -1837,7 +1839,7 @@ img {
 
 @media (max-width: 768px) {
   .brif {
-    background-image: url("../img/brif/brif-color-bg.png"), url("../img/brif/brif-bg.jpg");
+    background-image: url("../img/brif/brif-color.jpg"), url("../img/brif/brif-bg.jpg");
     background-position: top center, center bottom;
     background-size: 100% 45%, cover;
     background-repeat: repeat-x, no-repeat;
@@ -1853,6 +1855,16 @@ img {
   }
   .brif__form {
     margin-top: 80px;
+  }
+  .brif__button {
+    display: block;
+    margin: auto;
+    margin-bottom: 30px;
+  }
+  .form__title {
+    max-width: 400px;
+    margin: auto;
+    margin-bottom: 15px;
   }
   #username {
     position: absolute;
